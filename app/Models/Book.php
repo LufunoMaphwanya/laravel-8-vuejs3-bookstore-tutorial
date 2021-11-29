@@ -16,4 +16,22 @@ class Book extends Model
         'subtitle'
     ];
 
+    /**
+     * Get the reviews for the book
+     */
+    public function reviews()
+    {
+        return $this->hasMany(Review::class);
+    }
+
+    /**
+     * Get the pages for the book
+     */
+    public function pages()
+    {
+        return $this->hasMany(Page::class);
+    }
+
+
+
 }
