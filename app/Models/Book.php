@@ -16,6 +16,16 @@ class Book extends Model
         'subtitle'
     ];
 
+
+    /**
+     * Get the author of the book.
+     */
+    public function author()
+    {
+        return $this->belongsTo(Author::class);
+
+    }
+
     /**
      * Get the reviews for the book
      */

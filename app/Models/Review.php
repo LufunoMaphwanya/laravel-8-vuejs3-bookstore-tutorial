@@ -14,4 +14,13 @@ class Review extends Model
         'comment'
     ];
 
+    /**
+     * Get the book of the page.
+     */
+    public function book()
+    {
+        return $this->belongsTo(Book::class);
+
+    }
+
 }
