@@ -51,8 +51,8 @@ export default function useBooks() {
         books,
         book,
         errors,
-        getbook,
-        getbooks,
+        getBook,
+        getBooks,
         storeBook,
         updateBook,
         destroyBook

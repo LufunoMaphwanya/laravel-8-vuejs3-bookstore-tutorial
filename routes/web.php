@@ -22,11 +22,10 @@ Route::get('/dashboard', function () {
     return view('dashboard');
 })->middleware(['auth'])->name('dashboard');
 
-// Route::apiResource('books', BookController::class);
-
-Route::view('/{any}', 'dashboard')
-    ->middleware(['auth'])
-    ->where('any', '.*');
-
 
 require __DIR__.'/auth.php';
+require __DIR__.'/api.php';
+
+Route::view('/{any}', 'dashboard')
+    ->middleware('auth')
+    ->where('any', '.*');
