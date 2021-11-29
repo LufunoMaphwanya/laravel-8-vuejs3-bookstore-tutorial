@@ -1,7 +1,14 @@
 require('./bootstrap');
 
-import Alpine from 'alpinejs';
+require('alpinejs');
 
-window.Alpine = Alpine;
+import { createApp } from 'vue';
+import router from './router'
 
-Alpine.start();
+import BooksIndex from './components/books/BooksIndex.vue';
+
+createApp({
+    components: {
+        BooksIndex
+    }
+}).use(router).mount('#app')
