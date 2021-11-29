@@ -16,6 +16,11 @@ class Book extends Model
         'subtitle'
     ];
 
+    public function genres()
+    {
+        return $this->belongsToMany(Genre::class);
+    }
+
 
     /**
      * Get the author of the book.

@@ -20,6 +20,7 @@ class DatabaseSeeder extends Seeder
             GenreSeeder::class,
             AuthorBookSeeder::class,
             BookPageSeeder::class,
+            GenreBookSeeder::class
         ]);
     }
 }
