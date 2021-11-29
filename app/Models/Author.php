@@ -14,4 +14,12 @@ class Author extends Model
         'bio'
     ];
 
+     /**
+     * Get the books for the author
+     */
+    public function books()
+    {
+        return $this->hasMany(Book::class);
+    }
+
 }

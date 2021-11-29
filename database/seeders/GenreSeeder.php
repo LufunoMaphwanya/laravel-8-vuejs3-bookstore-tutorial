@@ -22,7 +22,7 @@ class GenreSeeder extends Seeder
             'Sci-fi',
             'Animation',
             'Action',
-            'Musical',
+            'Musical'
         ];
 
         foreach ($genres as $genre) {
