@@ -40,7 +40,7 @@
     </form>
 </template>
 
-<script>
+<script lang='ts'>
 import useBooks from '../../composables/books'
 import { onMounted } from 'vue';
 
@@ -52,7 +52,7 @@ export default {
         }
     },
 
-    setup(props) {
+    setup(props: any) {
         const { errors, book, updateBook, getBook } = useBooks()
 
         onMounted(() => getBook(props.id))

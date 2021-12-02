@@ -39,7 +39,7 @@
     </form>
 </template>
 
-<script>
+<script alang='ts'>
 import useBooks from '../../composables/books'
 import { reactive } from 'vue'
 

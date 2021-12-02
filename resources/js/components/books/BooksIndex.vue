@@ -29,7 +29,7 @@
     </div>
 </template>
 
-<script>
+<script lang='ts'>
 // Here we're using a Composable file here, its code is above
 import useBooks from '../../composables/books';
 
